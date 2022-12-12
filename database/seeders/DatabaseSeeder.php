@@ -21,6 +21,8 @@ class DatabaseSeeder extends Seeder
         //     'email' => 'test@example.com',
         // ]);
 
+        \App\Models\Customer::factory(1000)->create();
+
         $this->call([
             UserSeeder::class,
             ItemSeeder::class,
